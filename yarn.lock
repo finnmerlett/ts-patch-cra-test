@@ -13602,6 +13602,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@patch:typescript@npm:4.4.2#.yarn/patches/typescript-npm-4.4.2-8c784d6e94::locator=my-app%40workspace%3A.":
+  version: 4.4.2
+  resolution: "typescript@patch:typescript@npm%3A4.4.2#.yarn/patches/typescript-npm-4.4.2-8c784d6e94::version=4.4.2&hash=4c51e2&locator=my-app%40workspace%3A."
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 33d77651d7f0c1a6ab4d62402538308dddf06673f3ebb0655a937423b601cb7b650af89416e1d7732d898358dc30cbc2df0f68bba3ebb0ab77bedfa0b00d64fd
+  languageName: node
+  linkType: hard
+
 "unbox-primitive@npm:^1.0.1":
   version: 1.0.1
   resolution: "unbox-primitive@npm:1.0.1"

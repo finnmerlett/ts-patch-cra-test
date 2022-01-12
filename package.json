@@ -70,5 +70,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "typescript@4.4.2": "patch:typescript@npm:4.4.2#.yarn/patches/typescript-npm-4.4.2-8c784d6e94"
   }
 }
