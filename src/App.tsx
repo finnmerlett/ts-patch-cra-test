@@ -9,7 +9,7 @@ function App() {
     try {
       console.log("ts-is:", is<string>("string"));
     } catch (e) {
-      console.log("ts-is failed");
+      console.log("ts-is failed with", e);
     }
   }, []);
 
@@ -17,7 +17,7 @@ function App() {
     try {
       console.log("auto-mock", createMock<{ hello: string }>());
     } catch (e) {
-      console.log("auto-mock failed");
+      console.log("auto-mock failed with", e);
     }
   }, []);
   return (
