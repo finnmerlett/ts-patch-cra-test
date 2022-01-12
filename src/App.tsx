@@ -1,8 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { is } from "typescript-is";
+import { createMock } from "ts-auto-mock";
 
 function App() {
+  useEffect(() => {
+    try {
+      console.log("ts-is:", is<string>("string"));
+    } catch (e) {
+      console.log("ts-is failed");
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      console.log("auto-mock", createMock<{ hello: string }>());
+    } catch (e) {
+      console.log("auto-mock failed");
+    }
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
